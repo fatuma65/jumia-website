@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  /* margin-top: -10px; */
+}
+.setter {
+  background-color: palevioletred;
+  display: flex;
+  width: 50%;
+  margin-left: 20vh;
+  color: #fff;
+  position: relative;
+}
+.setter h1 {
+  margin: 10px;
+  font-weight: bolder;
+}
+.setter h3 {
+  margin: 10px;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 6px;
+  font-weight: 200px;
+  background-color: #f55b46;
+  border-bottom: 5px solid #fff;
+  border-right: 6px solid #fff;
+}
+.inner {
+  background-color: rgb(219, 154, 165);
+  /* padding: 10px; */
+  position: relative;
+}
+.list {
+  background-color: rgb(226, 231, 233);
+  display: flex;
+  color: #fff;
+  position: relative;
+}
+li {
+  display: inline;
+  padding: 20px;
+}
+.list p {
+  color: red;
+  margin-left: 20vh;
+}
+.list ul {
+  position: absolute;
+  left: 60%;
+}
+.list h6 {
+  color: #000;
+  margin-left: 50vh;
+  font-size: 15px;
+  position: absolute;
+  left: 30%;
+  transform: translateY(-90%);
+}
+.inner .call1 {
+  color: #000;
+  margin-left: 128vh;
+  display: flex;
+  font-size: 21px;
+  margin-top: -40px;
+  position: absolute;  
+}
+.inner .call {
+  margin-top: -60px;
+  font-size: 16px;
+  right: 71vh;
+  display: flex;
+  position: absolute;  
+
+}
