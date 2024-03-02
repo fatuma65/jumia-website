@@ -1,57 +1,86 @@
 .main-header {
   display: flex;
-  position: relative;
-  margin-top: 2vh;
+  margin-top: 30px;
   margin-left: 20vh;
 }
 .main-header h1 {
   margin: 10px;
 }
-.main-header .search {
+.btn {
+  font-size: 22px;
   margin: 10px;
-  margin-right: -1px;
-  padding: 15px;
-  margin-top: 5px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #f55b46;
+  background-color: orange;
   border: none;
-  height: 50px;
-  transition: background 1s;
 }
-.search:hover {
-  background-color: #000;
+.drop1 {
+  font-size: 22px;
+  /* width: 250px; */
+}
+.sign {
+  width: 200px;
 }
 .main-header .login {
   margin: 10px;
   margin-top: 5px;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 22px;
+  padding: 10px;
   color: #fff;
-  background-color: #f55b46;
+  /* background-color: #f55b46; */
   border: none;
-  height: 50px;
-  transition: background 1s;
+  cursor: pointer;
+
 }
-.login:hover {
-  background-color: #000;
+
+.btn:hover {
+  background-color: rgb(236, 192, 110);
 }
+
 .main-header h4 {
   margin: 10px;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 22px;
+  display: inline-block;
+  /* float: left; */
 }
 .main-header .input-search {
-  padding: 10px;
-  width: 40%;
+  padding: 30px;
+  width: 900px;
   margin-left: 10vh;
   height: 50px;
   margin-top: 5px;
+  display: block;
+  font-size: 22px;
 }
-#drop,
-#drop1 {
+.main-header #dropdown-basic {
+  background: none;
+  color: #000;
+  border: none;
+  font-size: 24px;
+}
+/* #dropdown-basic, */
+/* #drop1 {
   display: flex;
   height: 20px;
   margin-top: 3vh;
   border: none;
+} */
+
+@media screen and (max-width: 916px) and (min-width: 200px) {
+  .input-search {
+    /* width: 700px; */
+    margin-right: 80px;
+  }
+  .main-header h1 {
+    margin-left: -90px;
+  }
+
+  .main-header h4 {
+    margin-right: 10px;
+  }
+  #drop {
+    margin-right: 12px;
+  }
+  .main-header .btn {
+    margin-right: 30px;
+  }
 }

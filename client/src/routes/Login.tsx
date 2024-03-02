@@ -1,5 +1,4 @@
 import JumiaForm from "../components/JumiaForm"
-
 const Login = () => {
 
   return (
