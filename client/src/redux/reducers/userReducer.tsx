@@ -5,7 +5,8 @@ const initialState = {
     isLoggedIn: false,
     loading: false,
     userData: {},
-    error: null
+    error: null,
+    username: ''
 
 }
 
@@ -15,14 +16,19 @@ const userStateReducer = (state = initialState, action: any) => {
             return {
                 ...state, 
                 UserId: action.payload,
-                isLoggedIn: true
+                isLoggedIn: true,
             }
+            case userTypes.HANDLE_USERNAME:
+                return {
+                    ...state,
+                    username: action.payload
+                }
         case userTypes.HANDLE_LOGOUT:
             return {
                 ...state,
                 UserId: null,
                 isLoggedIn: false,
-                username: ''
+                userData: {}
             }
      
            case userTypes.FETCH_USER_SUCCESS:

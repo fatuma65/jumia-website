@@ -2,8 +2,14 @@ import { userTypes } from "./types"
 export const handleLogin = (UserId: any) => {
     return {
         type: userTypes.HANDLE_LOGIN,
-        payload: UserId,
+        payload: UserId
      
+    }
+}
+export const handleUserName = (username: any) => {
+    return {
+        type: userTypes.HANDLE_USERNAME,
+        payload: username
     }
 }
 

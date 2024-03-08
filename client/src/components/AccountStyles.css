@@ -31,11 +31,8 @@
 .List2 {
   width: 60%;
   height: 710px;
-  /* margin-left: 180px; */
-  /* margin-top: 40px; */
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  /* float: right; */
   margin-right: 107vh;
   margin-left: 600px;
   margin-top: -74vh;
@@ -54,24 +51,17 @@
 }
 .row .group2 {
   margin: 10px;
-  /* display: grid; */
   width: 650px;
-  /* float: right; */
   margin-left: 39rem;
-  /* position: absolute; */
   margin-top: 1vh;
-  /* height: 400px; */
 }
 .group3 {
   margin: 10px;
-  /* width: 650px; */
   margin-top: 6vh;
 }
 .group4 {
   margin: 10px;
-  /* display: grid; */
-  /* width:800px ; */
-  /* float: right; */
+
   margin-left: 2rem;
   left: 60%;
   position: absolute;
@@ -81,11 +71,9 @@
 .but1 {
     margin-left: -8px;
   display: flex;
-  /* margin-right: auto; */
-  /* width: 100px; */
+
   justify-content: center;
   padding: 10px;
-  /* margin-top: 5px; */
   background: none;
   font-size: 22px;
   color: orange;

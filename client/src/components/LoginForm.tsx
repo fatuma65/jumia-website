@@ -1,13 +1,12 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { Button } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { handleLogin } from "../redux/actions/userActions";
+import { handleLogin, handleUserName } from "../redux/actions/userActions";
 
 import "./LoginFormStyles.css";
 
 const LoginForm = () => {
- 
   const [loginData, setLogin] = useState({
     username: "",
     password: "",
@@ -19,9 +18,8 @@ const LoginForm = () => {
   const navigate = useNavigate();
   const move = useNavigate();
   const navigateBack = () => {
-    // navigate("/");
+    navigate("/");
   };
-
 
   const dispatch = useDispatch();
   const submitLogin = async (e: any) => {
@@ -38,16 +36,18 @@ const LoginForm = () => {
         console.log(data);
         setLogin(data);
 
-        // const UserId = userData.id;
         const UserId = data.UserId;
         console.log("UserId", UserId);
+        const name1 = data.username;
+        console.log(name1);
+
+        dispatch(handleUserName(name1));
 
         dispatch(handleLogin(UserId));
 
         console.log("this is the user id", UserId);
         console.log("Login is Successfull");
-        // move(`/get/${UserId}`);
-        move(`/account/${UserId}`);
+        move(`/${UserId}`);
       } else {
         console.log("Register Failed");
       }
@@ -84,15 +84,9 @@ const LoginForm = () => {
           <input className="form-check-input" type="checkbox" name="remember" />
           Remember me
         </label>
-        {/* <input
-          type="submit"
-          className="btn btn-success button"
-          style={{ textAlign: "center !important" }}
-        /> */}
+
         <Button onClick={submitLogin}>Login</Button>
       </form>
-
-
     </div>
   );
 };

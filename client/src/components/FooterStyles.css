@@ -1,0 +1,202 @@
+.footer {
+  position: relative;
+  color: #fff;
+  margin-top: -90px;
+}
+.footer1 {
+  width: 100%;
+  background-color: #000;
+  height: 20rem;
+  position: relative;
+}
+
+.footer2 {
+  background-color: rgb(85, 81, 81);
+  height: 60rem;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+}
+.footer1 .p-4 {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 37px;
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 180px;
+}
+.side1 .btn {
+  width: 120px;
+  display: inline;
+  padding: 15px;
+  background-color: #000;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+.side1 .btn:hover {
+  color: orange;
+  background: none;
+  border: 2px solid orange;
+}
+.side1 .input2 {
+  width: 400px;
+  padding: 15px;
+}
+.side1 {
+  font-size: 20px;
+  position: absolute;
+  left: 30%;
+  margin-top: 30px;
+  transform: translateY(-50%, -50%);
+}
+.side1 .input1 {
+  position: absolute;
+  left: 0;
+  margin-top: 120px;
+  padding: 10rem;
+  display: inline-block;
+}
+.side2 {
+  position: absolute;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-size: 18px;
+  right: 0;
+}
+.side1 label {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.side1 .para2 {
+  color: orange;
+}
+.para2:hover {
+  text-decoration: underline;
+}
+.side1.img2 {
+  border: 10px solid orange;
+}
+.side1.img2:hover {
+  color: orange;
+  border: 10px solid orange;
+}
+.footer2 li {
+  cursor: pointer;
+}
+.footer2 li:hover {
+  text-decoration: underline;
+  background: none;
+}
+.footer2 .jumia1 {
+  position: absolute;
+  left: 25%;
+  margin-top: 18px;
+}
+.footer2 .jumia2 {
+  position: absolute;
+  left: 47%;
+  margin-top: 15px;
+}
+.footer2 .jumia3-4 {
+  position: absolute;
+  left: 69%;
+  margin-top: 10px;
+}
+.jumia3-4 .jumia4 {
+  margin-left: 120px;
+  margin-top: -179px;
+}
+.footer2 .payment {
+  position: absolute;
+  left: 25%;
+  margin-top: 488px;
+}
+.footer2 .jumia6 {
+  position: absolute;
+  left: 17%;
+  margin-top: 660px;
+}
+.footer2 .jumia5 {
+  margin-top: 650px;
+  margin-left: 100px;
+  position: absolute;
+}
+.footer2 .jumia7 {
+  position: absolute;
+  left: 29%;
+  margin-top: 660px;
+}
+.footer2 .jumia8 {
+  position: absolute;
+  left: 42%;
+  margin-top: 660px;
+}
+.footer2 .jumia9 {
+  position: absolute;
+  left: 53%;
+  margin-top: 660px;
+}
+.footer2 .jumia10 {
+  position: absolute;
+  left: 63%;
+  margin-top: 660px;
+}
+.footer2 .jumia11 {
+  position: absolute;
+  left: 73%;
+  margin-top: 660px;
+}
+.footer2 .jumia12 {
+  position: absolute;
+  left: 83%;
+  margin-top: 660px;
+}
+.need {
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 15px;
+}
+.footer2 .name {
+  margin-left: 90px;
+  margin-top: 80px;
+  position: absolute;
+}
+.footer2 .name1 {
+  position: absolute;
+  left: 5%;
+  margin-top: 220px;
+}
+.footer2 .follow {
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 120px;
+}
+
+.footer2 h6 {
+  top: 88%;
+  position: absolute;
+  left: 50%;
+  font-size: 20px;
+  transform: translateY(-50%, -50%);
+}
+.footer2 hr {
+  width: 90%;
+  left: 5%;
+  margin-top: 820px;
+  position: absolute;
+}
+.footer2 .pay1 {
+  margin: 20px;
+  left: 46%;
+  margin-top: -10px;
+}
+.footer2 .pay2 {
+  margin-top: -10px;
+}
+.pay1:hover {
+  color: blue;
+}
+.pay2:hover {
+  color: #000;
+}

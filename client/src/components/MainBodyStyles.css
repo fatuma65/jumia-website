@@ -1,71 +1,64 @@
 .container1 {
-  background-color: rgb(223, 144, 170);
-  height: 100vh;
-  /* height: 800px; */
   position: relative;
   margin-top: 100px;
-  top: -80px;
-  z-index: 1;
+  max-width: 100%;
+  top: -90px;
+  left: -10px;
 }
-/* .container1 .list1 {
-  /* position: relative; */
-/* } */
+.con {
+  height: 710vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(171, 222, 238) 9%,
+    rgb(182, 55, 251) 8%
+  );
+}
 .container1 .ul1 {
-  display: flex;
-  flex-direction: column;
   color: #000;
   font-size: 18px;
-  background: #fff;
-  width: 300px;
-  height: 390px;
-  padding: 0;
-  margin-top: 2vh;
+  width: 340px;
+  height: 520px;
+  padding: 20px;
+  margin-top: -19vh;
   position: absolute;
-  margin-left: -20vh;
+  margin-left: -25vh;
 }
-li {
-  padding: 15px;
+
+.ul1 .list-group-item:hover {
+  color: orange;
 }
+.ul2 .me-auto:hover {
+  color: orange;
+  background: none;
+}
+
 .container1 .banner {
-  /* position: absolute; */
-  margin-left: 170px;
-  left: 20%;
-  margin-top: -140px;
+  margin-left: 350px;
+  left: 40%;
+  margin-top: -165px;
   width: 60%;
-  height: 70%;
-  /* position: relative; */
-  /* z-index: 1; */
+  height: 530px;
 }
 
 .container1 .shadow {
-  width: 85%;
-  height: 700px;
-  background-color: rgb(223, 144, 170);
-  /* box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.5),
-    -10px 0 10px -10px rgba(0, 0, 0, 0.5), 0 10px 10px -10px rgba(0, 0, 0, 0.5); */
-  /* opacity: 0.5; */
-  /* border-color: rgb(223, 144, 170); */
-
+  max-width: 89%;
+  height: 153vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(171, 222, 238) 23%,
+    rgb(182, 55, 251) 20%
+  );
   position: absolute;
-  /* bottom: 0;
-  
-  left: 0;
-  right: 0; */
-  /* clip-path: inset(10px -10px -10px -10px); */
-  /* left: 10%; */
-  margin-left: 150px;
-  border-top: transparent;
-  /* border: 10px solid transparent; */
+  margin-left: 110px;
   margin-top: 190px;
 }
 
 .container1 .list2 {
   position: absolute;
-  left: 1%;
-  margin-top: -38vh;
-  /* margin-top: -68vh; */
+  left: 14%;
+  margin-top: -45vh;
   display: flex;
-  width: 250px;
+  width: 240px;
   height: 412px;
 }
 .container1 .ul2 {
@@ -73,28 +66,29 @@ li {
   flex-direction: column;
   color: #000;
   font-size: 18px;
-  background: #fff;
-  width: 348px;
-  height: 250px;
-  padding: 0;
+  width: 380px;
+  height: 270px;
+  padding: 30px;
   position: absolute;
-  margin-left: 125vh;
-  /* margin-top: 125px; */
-  margin-top: -122px;
-  /* margin-top: 165px; */
+  margin-left: 121vh;
+  margin-top: -130px;
+}
+.ms-2 h5 {
+  margin-left: -20px;
+  margin-top: -10px;
+  margin: 8px;
+}
+.ms-2 h6 {
+  margin-left: -20px;
+  margin: 8px;
+  font-size: 19px;
 }
 .container1 .image {
-  width: 350px;
-  height: 250px;
-  margin-left: 127vh;
-  margin-top: -25vh;
-  /* position: absolute; */
+  width: 310px;
+  height: 270px;
+  margin-left: 151vh;
+  margin-top: -30vh;
 }
-
-/* img {
-    display: block;
-    max-width: 100%;
-} */
 
 @media screen and (max-width: 1000px) and (min-width: 100px) {
   .container1 {

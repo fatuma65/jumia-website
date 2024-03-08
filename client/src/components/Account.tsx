@@ -1,4 +1,3 @@
-// import { useEffect } from "react";
 import { useEffect } from "react";
 import { Button, ListGroup } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,7 +15,6 @@ const Account = () => {
     (state: any) => state.user
   );
   let id  = UserId;
-  // const { id } = useParams<{ id?: string }>();
   console.log("is the id", id);
   console.log(typeof id);
 
@@ -33,8 +31,6 @@ const Account = () => {
       .then((response: any) => response.json())
       .then((data: any) => {
         return (
-          // console.log(data)
-          // id.toString(),
           String(id),
         dispatch(fetchUserSuccess(data)),
         console.log(data)

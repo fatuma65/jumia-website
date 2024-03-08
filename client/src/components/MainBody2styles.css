@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container1 {
+  color: #fff;
+  margin-top: 200px;
+}
+.cont {
+  position: relative;
+}
+.cont h2 {
+  color: #000;
+}
+.row1 {
+
+  border: none;
+  border-color: none;
+  cursor: pointer;
+  margin-left: 3px;
+  transition: 0.3s;
+}
+.show2 {
+  margin-top: -80px;
+}
+.row11 {
+
+  border: none;
+  border-color: none;
+  cursor: pointer;
+  margin-left: 3px;
+
+  transition: 0.1s;
+}
+.row1:hover {
+  transform: translate(2px);
+
+  border: none;
+}
+.row11:hover {
+  transform: translate(2px);
+
+  border: none;
+}
+.row2 {
+  background-color: rgb(171, 222, 238);
+  width: 97%;
+  text-align: center;
+  margin-left: 37px;
+}
+
+.cont .flex1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 97%;
+  background-color: #fff;
+  margin-left: 37px;
+  margin-top: -1px;
+}
+.flex2 {
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 97%;
+  background-color: #fff;
+  margin-left: 37px;
+}
+.view {
+  width: 97%;
+  height: 450px;
+  background-color: #fff;
+  margin-left: 37px;
+}
+.view h3 {
+  color: #000;
+  margin-top: 10px;
+}
+.view h4 {
+  color: orange;
+  float: right;
+  margin-top: -110px;
+}
+
+.view1 {
+  margin-top: 20px;
+}
+.view1 .img-fluid {
+  width: 97%;
+  margin-left: 37px;
+}
+.row3 {
+  margin-top: 20px;
+  background-color: red;
+  position: relative;
+  margin-left: 37px;
+  margin-right: 20px;
+}
+.products-1 {
+  width: 97%;
+  height: 450px;
+  background-color: #fff;
+  margin-left: 37px;
+}
+
+.view4 {
+  width: 97%;
+  height: 430px;
+  background-color: #fff;
+  margin-left: 37px;
+  margin-top: 1px;
+}
+.sale {
+  margin-left: 37px;
+  margin-right: -35px;
+  margin-top: 30px;
+  width: 97%;
+  background-color: rgb(171, 222, 238);
+  text-align: center;
+  font-size: 22px;
+}
+.view4 .img {
+  margin: 5px;
+  width: 700px;
+  height: 90px;
+}
+.img1 {
+  width: 850px;
+  height: 405px;
+  margin-top: 5px;
+  margin-left: -75px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.img1:hover {
+  transform: translate(5px);
+}
+.view5 {
+  width: 97%;
+  height: 435px;
+  background-color: #fff;
+  margin-left: 37px;
+  margin-top: 15px;
+}
+.view5 .img1 {
+  margin-left: 20px;
+  margin: 8px;
+  width: 850px;
+}
+.viewed {
+  margin-top: 10px;
+  color: #000;
+}
+.viewed h5 {
+  margin-right: 83rem;
+  margin-top: 4px;
+  margin-bottom: -10px;
+}
+.view6 {
+  width: 97%;
+  height: 470px;
+  background-color: #fff;
+  margin-left: 37px;
+  margin-top: -19px;
+}
+.view6 .img1 {
+  width: 570px;
+  height: 450px;
+  margin: 8px;
+  margin-left: 6px;
+}
+.h2 {
+  margin: 20px;
+  margin-left: 37px;
+  color: #000;
+}
+.info {
+  width: 97%;
+  height: 108rem;
+  background-color: #fff;
+  margin-left: 37px;
+  margin-top: 19px;
+}
+.info h5 {
+  color: #000;
+  margin: 20px;
+  margin-top: 30px;
+}
+.info p {
+  color: #000;
+  margin: 20px;
+}
+.info h6 {
+  color: #000;
+  margin: 20px;
+}

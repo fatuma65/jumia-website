@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/myjumia-top-logo.png";
-// import LoginForm from "./LoginForm";
-// import { Link } from "react-router-dom";
 import "./JumiaFormStyles.css";
-// import LoginForm from './'
 
 const JumiaForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -60,10 +57,7 @@ const JumiaForm = () => {
       <p>
        Create an Account or Log In to your account
       </p>
-      {/* <p className="p">Jumia account</p> */}
-
       <form>
-        {/* <label>FirstName </label> */}
         <input
           type="text"
           value={firstName}
@@ -71,7 +65,6 @@ const JumiaForm = () => {
           placeholder="first Name"
           required
         />
-        {/* <label>LastName </label> */}
         <input
           type="text"
           defaultValue={lastName}
@@ -79,7 +72,6 @@ const JumiaForm = () => {
           placeholder="last Name"
           required
         />
-        {/* <label>Email </label> */}
         <input
           type="text"
           defaultValue={email}
@@ -87,7 +79,6 @@ const JumiaForm = () => {
           placeholder="Email"
           required
         />
-        {/* <label>Username </label> */}
         <input
           type="text"
           defaultValue={username}
@@ -95,7 +86,6 @@ const JumiaForm = () => {
           placeholder="Username"
           required
         />
-        {/* <label>Password </label> */}
         <input
           type="text"
           value={password}
