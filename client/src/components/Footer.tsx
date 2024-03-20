@@ -7,15 +7,15 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer1">
-        <h3 className="p-4 fw-bold fs-1">
+        <h3 className="p-4 fw-bold fs-4">
           JUMIA{" "}
           <img
             src={logo}
-            style={{ width: "26px", height: "30px", marginTop: "-10px" }}
+            style={{ width: "18px", height: "20px", marginTop: "-12px" }}
           />
         </h3>
         <div className="side1">
-          <h6 className="fw-bolder">NEW TO JUMIA?</h6>
+          <h6 className="fw-regular">NEW TO JUMIA?</h6>
           <p>
             Subscribe to our newsletter to get updates on our latest offers!
           </p>
@@ -33,40 +33,40 @@ const Footer = () => {
           />
           <label
          
-           className="para">   
+           className="para ">   
             I agree to Jumias Privacy and Cookie Policy. You can unsubscribe
             from newsletters at <br /> any time.
           </label>
           <p className="para2">I accept the Legal Terms</p>
         </div>
         <div className="side2 ">
-          <h3 className="fw-bolder">DOWNLOAD JUMIA FREE APP</h3>
+          <h3 className="fw-regular">DOWNLOAD JUMIA FREE APP</h3>
           <p>Get access to exclusive offers!</p>
           <img
             src={apple}
             alt=""
-            style={{ width: "180px", height: "60px" }}
+            style={{ width: "130px", height: "40px" }}
             className="img2"
           />
           <img
             src={google}
             alt=""
-            style={{ width: "180px", height: "60px" }}
+            style={{ width: "130px", height: "40px" }}
             className="img2"
           />
         </div>
       </div>
       <div className="footer2">
         <div className="">
-          <h4 className="p-3 need fs-5 fw-semibold">NEED HELP?</h4>
+          <h4 className="p-3 need fs-6 fw-semibold">NEED HELP?</h4>
           <ul className="name fw-lighter">
             <li className="list-group-item">Chat With Us</li>
             <li className="list-group-item"> Help Center</li>
             <li className="list-group-item">Contact us</li>
           </ul>
           <div className="name1 ">
-            <h4 className="p-3 fs-5 fw-semibold">USEFUL LINKS</h4>
-            <ul>
+            <h4 className="p-2 fs-6 fw-semibold">USEFUL LINKS</h4>
+            <ul className="">
               <li className="list-group-item">Place an order</li>
               <li className="list-group-item">Pay for your order</li>
               <li className="list-group-item">Delivery</li>
@@ -76,11 +76,11 @@ const Footer = () => {
             </ul>
           </div>
           <div className=" follow ">
-            <h4 className="fs-5 fw-semibold">FOLLOW US</h4>
+            <h4 className="fs-6 fw-semibold">FOLLOW US</h4>
           </div>
 
           <div className="jumia1">
-            <h4 className="p-3 fs-5 fw-semibold">ABOUT JUMIA UGANDA</h4>
+            <h4 className="p-3 fs-6 fw-semibold">ABOUT JUMIA UGANDA</h4>
             <ul>
               <li className="list-group-item">About Us</li>
               <li className="list-group-item">Jumia Careers</li>
@@ -98,7 +98,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="jumia2">
-            <h4 className="p-3 fs-5 fw-semibold">MAKE MONEY WITH US</h4>
+            <h4 className="p-3 fs-6 fw-semibold">MAKE MONEY WITH US</h4>
             <ul>
               <li className="list-group-item ">Sell on Jumia</li>
               <li className="list-group-item">Vendor Hub</li>
@@ -114,7 +114,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="jumia3-4 ">
-            <h4 className="p-3 fs-5 fw-semibold">JUMIA INTERNATIONAL</h4>
+            <h4 className="p-3 fs-6 fw-semibold">JUMIA INTERNATIONAL</h4>
             <ul className="jumia3">
               <li className="list-group-item">Algerie</li>
               <li className="list-group-item">Cote</li>
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
 
           <div className="payment">
-            <h4 className="p-3 fs-5 fw-semibold">PAYMENT METHODS</h4>
+            <h4 className="p-3 fs-6 fw-semibold">PAYMENT METHODS</h4>
           </div>
           <ul className="jumia5">
             <li className="list-group-item">Acer</li>
@@ -181,7 +181,7 @@ const Footer = () => {
 
         <h6 className="pay1">PAY</h6>
         <h6 className="pay2">
-          <img src={logo} style={{ width: "23px", marginTop: "-5px" }} /> FORCE
+          <img src={logo} style={{ width: "18px", marginTop: "-5px" }} /> FORCE
         </h6>
       </div>
     </div>

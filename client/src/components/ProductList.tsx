@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   fetchAllProducts,
   fetchProductFailure,
@@ -8,10 +9,14 @@ import {
 
 import { Card } from "react-bootstrap";
 import "./ProductListStyles.css";
+import ProductDetails from "./ProductDetails";
 const ProductList = () => {
   const [loaded, setLoaded] = useState(false);
   const [showArrows, setShowArrows] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { error, products, slicedProducts } = useSelector(
     (state: any) => state.product
   );
@@ -63,6 +68,24 @@ const ProductList = () => {
   if (error) {
     return <h1>Error: {error.message}</h1>;
   }
+
+  const truncateTitle = (title:any, maxLength:any) => {
+    if (title.length <= maxLength) {
+      return title
+    }
+    else {
+      const words = title.split('')
+      const truncateDTitle = words.slice(0, maxLength).join('')
+      return truncateDTitle + '...'
+    }
+  }
+
+  const handleClick = (id: any) => {
+    setSelectedProduct(id);
+    console.log(id);
+    navigate(`/product/details/${id}`);
+  };
+
   return (
     <div
       className='pagination '
@@ -74,15 +97,15 @@ const ProductList = () => {
   
       {slicedProducts.map((item: any) => {
         return (
-          <div className="product row " key={item.id}>
+          <div className="product row " key={item.id} onClick={() => handleClick(item.id)}>
             <Card className="col each ">
               <Card.Img
                 src={`http://localhost:4000/uploads/${item.image}`}
                 className="img-fluid mx-auto card"
-                style={{ width: "350px", height: "290px" }}
+                style={{ width: "250px", height: "170px" }}
               />
-              <Card.Title>{item.title}</Card.Title>
-              <Card.Text>UGX {item.price}</Card.Text>
+              <Card.Title className="word-break">{truncateTitle(item.title, 15)}</Card.Title>
+              <Card.Text className="fw-semibold">UGX {item.price}</Card.Text>
             </Card>
           </div>
         );
@@ -115,6 +138,7 @@ const ProductList = () => {
           </div>
         )}
       </div>
+      {selectedProduct && <ProductDetails />}
     </div>
   );
 };

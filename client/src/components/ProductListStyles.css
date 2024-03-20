@@ -1,28 +1,32 @@
 .product {
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
 }
 .each {
-  height: 410px;
+  height: 290px;
   cursor: pointer;
   transition: 0.5s;
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 180px;
 }
 .each:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
 .card {
   border: none;
 }
+.word-break {
+  font-size: 15px;
+}
 .button1 {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
   background-color: grey;
   border: none;
-  margin-top: 170px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +55,8 @@
   transform: translateY(-50%, -50%);
   margin: 20px;
   top: 0;
-  left: 50%;
-  margin-left: -790px;
-  right: 79rem;
+  left: 55%;
+  margin-left: -670px;
+  right: 10px;
+  /* right: 79rem; */
 }

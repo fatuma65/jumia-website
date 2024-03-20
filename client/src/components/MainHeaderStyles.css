@@ -1,58 +1,74 @@
 .main-header {
   display: flex;
-  margin-top: 5px;
+  margin-top: -2px;
+  margin-right: 170px;
 }
 
-.main-header-1 {
+/* .main-header-1 {
   background-color: #fff;
   width: 100%;
-  height: 120px;
+  height: 50px;
+} */
+.main-header-1 h3 {
+  display: flex;
 }
 .header3 {
   margin-left: 170px;
+ 
 }
 
 .main-header h1 {
   margin: 10px;
+
 }
 .btn {
-  font-size: 22px;
-  margin: 10px;
+  font-size: 16px;
+  /* margin: 10px; */
   background-color: orange;
   border: none;
 }
+.btn3 {
+  padding: 10px;
+}
 .navb {
+  background: none;
+  margin-left: -45px;
+  border: none;
   background: none;
 }
 .drop1 {
-  font-size: 22px;
-  width: 300px;
-  height: 250px;
+  font-size: 15px;
+  width: 180px;
+  height: 160px;
   padding: 10px;
 }
 .dropdown-basic:hover {
  border: 1px solid orange;
 }
 .drop2 {
-  font-size: 21px;
-  width: 300px;
-  height: 350px;
-  padding: 30px;
+  font-size: 16px;
+  width: 240px;
+  height: 260px;
+  padding: 10px;
   text-align: left;
 }
 .main-header-1 .search {
-  padding: 15px;
+  padding: 12px;
+  font-size: 15px;
+  margin: 10px;
 }
 .sign {
-  width: 200px;
+  width: 130px;
+  padding: 10px;
+  font-size: 14px;
 }
 #dropdown-basic:hover {
   color: orange;
 }
 .main-header .login {
-  margin: 10px;
+  /* margin: 10px; */
   margin-top: 5px;
-  font-size: 22px;
+  font-size: 15px;
   padding: 10px;
   color: #fff;
   border: none;
@@ -64,26 +80,33 @@
 }
 
 .main-header h4 {
-  margin: 10px;
+  margin: 13px;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 18px;
   display: inline-block;
 }
 .main-header .input-search {
-  padding: 30px;
-  width: 900px;
+  padding: 8px;
+  width: 600px;
   margin-left: 10vh;
-  height: 50px;
+  /* height: 50px; */
   margin-top: 5px;
   display: block;
   border: 1px solid grey;
-  font-size: 22px;
+  font-size: 15px;
 }
 .main-header #dropdown-basic {
   background: none;
   color: #000;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
+}
+.main-header #dropdown-basic1 {
+  background: none;
+  color: #000;
+  border: none;
+  font-size: 18px;
+  margin-right: -10px;
 }
 
 @media screen and (max-width: 916px) and (min-width: 200px) {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
@@ -22,6 +23,7 @@ const LoginForm = () => {
   };
 
   const dispatch = useDispatch();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const submitLogin = async (e: any) => {
     e.preventDefault();
     try {
@@ -80,7 +82,7 @@ const LoginForm = () => {
           required
           autoComplete="on"
         />
-        <label className="form-check-label">
+        <label className="form-check-label label1">
           <input className="form-check-input" type="checkbox" name="remember" />
           Remember me
         </label>

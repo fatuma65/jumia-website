@@ -15,7 +15,7 @@ const MainBody2 = () => {
     <>
       <div className="cont">
         <div className=" container1 ">
-          <div className="row2 p-3">
+          <div className="row2 p-2">
             <h2>SWIPE FOR MORE</h2>
           </div>
           <div className="d-flex flex-row justify-content-center mb-3 flex1">
@@ -28,7 +28,7 @@ const MainBody2 = () => {
                   <Card.Img
                     variant="top"
                     src={value.imageSrc}
-                    style={{ width: "180px" }}
+                    style={{ width: "130px" }}
                   />
                 </Card>
               );
@@ -47,7 +47,7 @@ const MainBody2 = () => {
                   <Card.Img
                     variant="top"
                     src={value.imageSrc}
-                    style={{ width: "180px" }}
+                    style={{ width: "130px" }}
                   />
                 </Card>
               );
@@ -57,21 +57,21 @@ const MainBody2 = () => {
             </div>
           </div>
           <div className="view">
-            <h3 className="p-4">Your Last Reviewed Products</h3>
+            <h3 className="p-3">Your Last Reviewed Products</h3>
             <h4 className="p-5">SEE ALL </h4>
           </div>
           <div className="view1">
-            <div className="row2 p-3">
+            <div className="row2 p-2">
               <h2>Dont Miss Out On These!</h2>
             </div>
             <img src={Tech} className="img-fluid" />
           </div>
           <div className="view2">
-            <div className="row3 p-3 d-flex justify-content-between">
+            <div className="row3 p-2 d-flex justify-content-between">
               <h4>Flash Sales</h4>
-              <h4>
-                Time Left: <DiscountTimer />{" "}
-              </h4>
+              <div className="timer">
+                Time Left: <DiscountTimer />
+              </div>
               <h4>SEE ALL</h4>
             </div>
             <div className="products-1 container-fluid">
@@ -79,25 +79,25 @@ const MainBody2 = () => {
             </div>
           </div>
           <div className=" ">
-            <div className=" p-3 sale">
+            <div className=" p-2 sale">
               <h2>Tech Sale | Upto 60% OFF</h2>
             </div>
-            <div className="view4 d-flex justify-content-around p-1">
+            <div className="view4 d-flex justify-content-around ">
               {techSales.map((sales, index) => {
                 return (
-                  <div key={index} className="img ">
-                    <img src={sales.imageSrc} key={index} className="img1" />
+                  <div key={index} className="main-img p-2 ">
+                    <img src={sales.imageSrc} key={index} className="img1 mb-1 img-fluid" />
                   </div>
                 );
               })}
             </div>
           </div>
-          <div className="view5 d-flex justify-content-around p-2">
-            <img src={tech4} alt="tech1" className="img1" />
-            <img src={tech2} alt="tech2" className="img1" />
+          <div className="view5 d-flex justify-content-around p-1">
+            <img src={tech4} alt="tech1" className="img1 img-fluid" />
+            <img src={tech2} alt="tech2" className="img1 img-fluid" />
           </div>
           <div className="view2 viewed">
-            <div className="row2 p-3 d-flex justify-content-between">
+            <div className="row2 p-1 d-flex justify-content-between ">
               <h4>Tech Sale |</h4>
               <h5>Top Offers</h5>
               <h4>SEE ALL</h4>
@@ -105,7 +105,7 @@ const MainBody2 = () => {
             <div className="products-1"></div>
           </div>
           <div>
-            <div className="row2 p-3 h2">
+            <div className="row2 p-2 h2 mb-3">
               <h2>Pixel Brand Sale</h2>
             </div>
             <div className="view6 d-flex justify-content-between p-1">
@@ -115,11 +115,11 @@ const MainBody2 = () => {
             </div>
           </div>
           <div className="info">
-            <div className="text-start text-break fs-5">
-              <h5 className="fs-4 fw-lighter">
+            <div className="text-start text-break ">
+              <h5 className="fs-6 fw-lighter h5 ">
                 Jumia Uganda - Unveiling Our Leading E-Commerce Website
               </h5>
-              <h5 className="fs-4 fw-lighter">
+              <h5 className="fs-6 fw-regular">
                 Welcome to the ultimate online shopping destination!
               </h5>
               <p>
@@ -132,7 +132,7 @@ const MainBody2 = () => {
                 buying online in Kampala, Nansana, Entebbe, Kira and all across
                 Uganda.
               </p>
-              <h5 className="fs-4 fw-lighter">
+              <h5 className="fs-6 fw-regular">
                 Best Prices, Premium Brands, and Diverse Categories
               </h5>
               <p>
@@ -148,7 +148,7 @@ const MainBody2 = () => {
                 brands such as Samsung, Tecno, HP, Infinix, Apple, Lenovo, DELL
                 and Hisense
               </p>
-              <h5 className="fs-4 fw-lighter">
+              <h5 className="fs-6 fw-regular">
                 Tempting Offers, Exclusive Promotions, and Enormous Savings
               </h5>
               <p>
@@ -161,7 +161,7 @@ const MainBody2 = () => {
                 range of products, from watches to air conditioners, laptops,
                 sneakers, washing machine, bluetooth speakers and earbuds.
               </p>
-              <h5 className="fs-4 fw-lighter">Exceptional Services</h5>
+              <h5 className="fs-6 fw-regular">Exceptional Services</h5>
               <p>
                 At our online store, we go the extra mile to ensure your online
                 shopping experience is seamless and gratifying. Benefit from our
@@ -179,7 +179,7 @@ const MainBody2 = () => {
                 abroad brings the best of international quality and innovation
                 right to your fingertips.
               </p>
-              <h5 className="fs-4 fw-lighter">
+              <h5 className="fs-6 fw-regular">
                 Don't Miss Our Exclusive Campaign Events
               </h5>
               <p>
@@ -200,15 +200,15 @@ const MainBody2 = () => {
                 offers, captivating deals, and unparalleled discounts. Shop with
                 us today and embrace the future of online shopping!
               </p>
-              <h5 className="fs-4 fw-lighter">FAQs</h5>
-              <h5>How can I place an order? </h5>
+              <h5 className="fs-6 fw-regular">FAQs</h5>
+              <h6>How can I place an order? </h6>
               <p>
                 Placing an order is easy! Simply browse our website, select the
                 products you want, add them to your cart, and proceed to
                 checkout. Follow the on-screen instructions to complete your
                 purchase.
               </p>
-              <h6 className="fs-5 fw-lighter">
+              <h6 className="fs-6 fw-regular">
                 What payment methods do you accept?{" "}
               </h6>
               <p>
@@ -216,14 +216,14 @@ const MainBody2 = () => {
                 and cash on delivery. Choose the one that suits you best during
                 the checkout process.
               </p>
-              <h6 className="fs-5 fw-lighter">How long does delivery take? </h6>
+              <h6 className="fs-6 fw-regular">How long does delivery take? </h6>
               <p>
                 Delivery times may vary depending on your location and the
                 product. We strive to deliver your orders as quickly as
                 possible, and you can check the estimated delivery time during
                 the checkout process.
               </p>
-              <h6 className="fs-5 fw-lighter">
+              <h6 className="fs-5 fw-regular">
                 Do you offer refunds or returns?{" "}
               </h6>
               <p>
@@ -231,7 +231,7 @@ const MainBody2 = () => {
                 not satisfied with your purchase, you can initiate a return
                 request, and we'll guide you through the process.
               </p>
-              <h6 className="fs-5 fw-lighter">
+              <h6 className="fs-6 fw-regular">
                 Is my personal information safe?{" "}
               </h6>
               <p>

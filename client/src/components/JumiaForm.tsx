@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -36,7 +37,7 @@ const JumiaForm = () => {
         const data = await response.json();
         console.log(data);
         console.log("Registration is Successfull");
-        navigate("/");
+        navigate("/form");
       } else {
         console.log("Register Failed");
       }
@@ -53,7 +54,7 @@ const JumiaForm = () => {
   return (
     <div className="form">
       <img src={logo} />
-      <h5 style={{ fontSize: "26px" }}>Welcome to Jumia</h5>
+      <h5 style={{ fontSize: "22px" }}>Welcome to Jumia</h5>
       <p>
        Create an Account or Log In to your account
       </p>
@@ -98,17 +99,17 @@ const JumiaForm = () => {
         </Button>
         <p className="aaa">
           By continuing you agree to Jumia
-          <br /> <a href="#">Terms and Condiions</a>
+          <br /> <a href="#">Terms and Conditions</a>
         </p>
       </form>
 
       <Button className="bnt" onClick={handleClick}>Login With Your Account</Button>
-      <h5>
+      <h5 className="p1">
         For further support, you may visit the Help Center or contact <br />
       </h5>
       <h5 className="p1">our customer service team.</h5>
       <h3>
-        Jumia <img src={logo} style={{ width: "30px", marginLeft: "-5px" }} />
+        Jumia <img src={logo} style={{ width: "20px", marginLeft: "-4px" }} />
       </h3>
     </div>
   );

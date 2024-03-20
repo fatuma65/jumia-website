@@ -36,9 +36,9 @@ const DiscountTimer = () => {
   const secondsLeft = Math.floor((remainingTime % (1000 * 60)) / 1000);
   return (
     <>
-      <h4 style={{ display: "inline", fontWeight: "bold" }}>
+      <h5 style={{ display: "flex", fontWeight: "bold", marginTop:'3px' }} >
         {hoursLeft}h: {minutesLeft}m :{secondsLeft}s
-      </h4>
+      </h5>
     </>
   );
 };

@@ -5,7 +5,7 @@ const initialState = {
   slicedProducts: [],
   loading: false,
   error: null,
-  productDetails: {},
+  productDetails: null,
 };
 
 const productReducer = (state = initialState, action: any) => {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ListGroup } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -14,10 +14,22 @@ const MainHeader = () => {
   const { userData, UserId, isLoggedIn, username } = useSelector(
     (state: any) => state.user
   );
-
   const [todo, setTodo] = useState("");
+
+  const [categories, setCategories] = useState([]);
+  const [previousScroll, setPreviousScroll] = useState(0)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    fetch("http://localhost:4000/category/get/category")
+      .then((response) => response.json())
+      .then((data: any) => {
+        console.log(data), setCategories(data);
+      });
+  }, []);
   const history = useNavigate();
   const navigate = useNavigate();
+  const back = useNavigate()
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -25,10 +37,26 @@ const MainHeader = () => {
     history("/login");
   };
 
+  useEffect(() =>{
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY
+      setVisible(previousScroll > currentScrollPosition || currentScrollPosition < 10)
+      // setVisible((previousScroll > currentScrollPosition && previousScroll -currentScrollPosition > 70) || currentScrollPosition < 10)
+
+      setPreviousScroll(currentScrollPosition)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [previousScroll])
+
   const handleLog = () => {
     dispatch(handleLogout());
     navigate("/");
   };
+
+  const handleBack = () => {
+    back('/')
+  }
 
   const handleSearch = (e: any) => {
     e.preventDefault();
@@ -39,12 +67,13 @@ const MainHeader = () => {
     setTodo("");
   };
 
+
   return (
     <>
-      <div className="main-header fixed-top-scroll">
-        <div className="main-header-1 d-flex justify-content-start flex-row align-items-center">
-          <div className="header3 d-flex justify-content-start flex-row align-items-center  ">
-            <Navbar expand="xxxl" className="bg-body-tertiary mb-3 navb">
+      <div className="main-header ">
+        <div className={`main-header-1 d-flex justify-content-start flex-column align-items-center  `}>
+          <div className={`header3 d-flex justify-content-start flex-row align-items-center ${visible ? '' : 'hidden'}`} >
+            {/* <Navbar expand="xxxl" className="bg-body-tertiary  navb">
               <Container fluid>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-xxxl`} />
                 <Navbar.Offcanvas
@@ -53,23 +82,24 @@ const MainHeader = () => {
                   placement="start"
                 >
                   <Offcanvas.Header closeButton>
-                    <ListGroup>
-                      <li className="list-group-item" style={{ border: "none" }}>Home & Office</li>
-                      <li className="list-group-item" style={{ border: "none" }}> Appliances</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Supermarket</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Phones & tablets</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Electronics</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Computing</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Gaming</li>
-                      <li className="list-group-item" style={{ border: "none" }}>Fashion</li>
-                    </ListGroup>
+                        <div className="list1 container">
+              {categories.map((category: any) => {
+                return (
+                  <ul className="ul1" key={category.id}>
+                    <li className="list-group-item mb-1" style={{ border: "none" }} >
+                      {category.title}
+                    </li>
+                  </ul>
+                );
+              })}
+            </div>
                   </Offcanvas.Header>
                 </Navbar.Offcanvas>
               </Container>
-            </Navbar>
-            <h1 className="fs-1 fw-bold">
-              JUMIA <img src={logo} style={{ width: "30px" }} />
-            </h1>
+            </Navbar> */}
+            <h3 className="fs-2 fw-bold" onClick={handleBack} style={{cursor: 'pointer'}}>
+              JUMIA <img src={logo} style={{ width: "20px", height: '25px' , marginTop: '5px', marginLeft:'6px'}} />
+            </h3>
             <input
               type="search"
               value={todo}
@@ -133,7 +163,7 @@ const MainHeader = () => {
               )}
             </Dropdown>
             <Dropdown>
-              <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              <Dropdown.Toggle variant="secondary" id="dropdown-basic1">
                 Help
               </Dropdown.Toggle>
 
@@ -145,7 +175,7 @@ const MainHeader = () => {
                 <Dropdown.Item>Order Cancelention</Dropdown.Item>
                 <Dropdown.Item>Returns & Refunds</Dropdown.Item>
                 <Dropdown.Item>
-                  <button className="btn btn-primary">Live Help</button>
+                  <button className="btn btn-primary btn3 ">Live Help</button>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -154,6 +184,7 @@ const MainHeader = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

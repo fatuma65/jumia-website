@@ -102,32 +102,31 @@ const Account = () => {
       </div>
 
       <div className="List2 container">
-        <h2>Account Overview</h2>
+        <h2 className="fw-bold">Account Overview</h2>
         <hr />
 
         <div className="row">
           <ListGroup
-            className="d-flex justify-content-between align-items-start group1 col"
+            className="d-flex justify-content-between align-items-start group1"
             style={{ width: "60px" }}
           >
-            <div className="ms-2 me-auto" style={{ width: "550px" }}>
+            <div className="ms-2 me-auto" style={{ width: "430px" }}>
               <ListGroup.Item
                 className="fw-bold "
-                style={{ fontWeight: "600px" }}
               >
                 Account Details
               </ListGroup.Item>
               <ListGroup.Item style={{ borderBottom: "none" }} className="">
               {userData.firstName + ' ' + userData.lastName}
               </ListGroup.Item>
-              <ListGroup.Item style={{ marginTop: "10px", height: "8rem" }}>
+              <ListGroup.Item style={{ marginTop: "10px", height: "5rem" }}>
               {userData.email}
               </ListGroup.Item>
             </div>
           </ListGroup>
 
-          <ListGroup className="d-flex justify-content-between align-items-start group2 col">
-            <div className="ms-2 me-auto">
+          <ListGroup className="d-flex justify-content-between align-items-start group2">
+            <div className="ms-2 me-auto start1" >
               <ListGroup.Item className="fw-bold ">Address Book</ListGroup.Item>
               <ListGroup.Item>
                 Your default shipping address:
@@ -143,13 +142,13 @@ const Account = () => {
         <div className="row">
           <ListGroup className="d-flex justify-content-between align-items-start group3 col-1">
             <div
-              className="ms-2 me-auto"
-              style={{ width: "550px", height: "270px" }}
+              className="ms-2 me-auto start2"
+              // style={{ width: "400px", height: "270px" }}
             >
               <ListGroup.Item className="fw-bold ">
                 JUMIA STORE CREDIT
               </ListGroup.Item>
-              <ListGroup.Item style={{ height: "10rem", color: "blue" }}>
+              <ListGroup.Item style={{ height: "150px", color: "blue" }}>
                 Jumia Pay Balance: UGX 0
               </ListGroup.Item>
             </div>
@@ -157,8 +156,8 @@ const Account = () => {
 
           <ListGroup className="d-flex justify-content-between align-items-start group4 col-1">
             <div
-              className="ms-2 me-auto"
-              style={{ width: "520px", height: "270px" }}
+              className="ms-2 me-auto start3"
+              // style={{ width: "420px", height: "270px" }}
             >
               <ListGroup.Item className="fw-bold ">
                 NEWSLETTER PREFERENCES
