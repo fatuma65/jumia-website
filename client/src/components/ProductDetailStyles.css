@@ -1,0 +1,239 @@
+.details {
+    background-color: rgb(226, 231, 233);
+    height: 220vh;
+    /* height: 800px; */
+    margin-top: 10px;
+}
+.first-div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 900px;
+    height: 700px;
+    margin-left: 140px;
+    margin-top: 40px;
+    background-color: #fff;
+
+    position: absolute;
+}
+.nested .title {
+    position: absolute;
+    font-size: 18px;
+
+}
+.item-image {
+    width: 380px;
+    height: 330px;
+
+    margin-top: 15px;
+}
+.nested {
+    position: absolute;
+    right: 0;
+    margin-right: 70px;
+    /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); */
+    width: 450px;
+    height: 400px;
+    margin-top: 25px;
+}
+.nested .brand {
+    margin-top: 50px;
+    font-size: 15px;
+}
+.nested a {
+    text-decoration: none;
+    font-size: 13px;
+}
+a:hover {
+    text-decoration: underline;
+    color: none;
+}
+.inside {
+    border: 2px solid red;
+    height: 100px;
+}
+.inside1 {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    /* width: 50px; */
+    height: 30px;
+    background-color: red;
+    color: #fff;
+}
+.add {
+    width: 450px;
+    height: 50px;
+}
+.time {
+    margin-right: 10px;
+    display: flex;
+}
+.inside3 {
+    border: 1px solid grey;
+    height: 120px;
+}
+.money {
+    font-size:12px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: -6px;
+}
+.nested h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.inside3 .h6 {
+    margin-left: 45px;
+    margin-top: 8px;
+}
+.inside3 .main-hr {
+    margin-top: -8px;
+}
+.inside3 .total {
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.both {
+    float: right;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+.price {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.prom {
+    margin-top: 25px;
+}
+.share {
+    top: 170%;
+    position: absolute;
+    margin-left: 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.prod {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.second-div {
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        width: 270px;
+        height: 470px;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+        margin-top: 40px;
+}
+.third-div {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    width: 270px;
+    height: 210px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 520px;
+}
+.second-div .return {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+ .second-hr {
+    margin-top: -4px;
+}
+.second-div .jumia {
+    font-size: 12px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+.express {
+    font-size: 12px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: -12px;
+}
+.third-hr {
+    margin-top: -12px;
+}
+.choose {
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: -7px;
+}
+#regions {
+    width: 230px;
+    margin-left: 10px;
+    padding: 12px;
+}
+#regions1 {
+    width: 230px;
+    margin-left: 10px;
+    padding: 12px;
+    margin-top: 10px;
+}
+.station1 h6 {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.station1 a{
+    font-size: 13px;
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+.station1 p {
+    font-size: 12px;
+    margin-left: 40px;
+}
+.station2 p {
+    font-size: 12px;
+    margin-left: 40px;
+}
+.station3 p {
+    font-size: 12px;
+    margin-left: 40px;
+}
+.fees {
+    margin-top: -8px;
+}
+.pick {
+    margin-top: -15px;
+}
+.with {
+    margin-top: -15px;
+}
+.station2 h6 {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.station3 h6 {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.station2 a{
+    font-size: 13px;
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+
+.description {
+ 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 900px;
+        height: 700px;
+        margin-left: 140px;
+        margin-top: 770px;
+        background-color: #fff;
+
+        position: absolute;
+    
+}
